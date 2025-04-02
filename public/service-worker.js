@@ -1,9 +1,9 @@
-// public/service-worker.js
+
 self.addEventListener("install", (event) => {
     console.log("Service Worker installing.");
     event.waitUntil(
         caches.open("app-cache").then((cache) => {
-            return cache.addAll(["/", "/index.html", "/logo192.png"]);
+            return cache.addAll(["/", "/index.html", "/appLogo.png"]);
         })
     );
 });
