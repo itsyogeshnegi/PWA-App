@@ -7,6 +7,7 @@ const ShopCard = ({data}) => {
             <img src={data?.image}/>
             <p>{data?.name}</p>
             <p>Rating : {data?.rating}/5</p>
+            <p>Totoal Review : {data?.reviewCount}</p>
         </div>
     </div>
   )
